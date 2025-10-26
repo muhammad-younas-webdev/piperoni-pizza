@@ -1,0 +1,999 @@
+/*===========================================================================================================================
+					Theme Colors , size , font familes , line height , letter spacing , fontweight
+============================================================================================================================*/
+/*------------------Defalt Styling------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+::selection {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/*Defalt Styling
+==================================================================================*/
+/*website theme colors
+==================================================================================*/
+:root {
+  --themeRed: #d31217;
+  --themeDark: #2a2a2a;
+}
+
+/*website theme colors
+==================================================================================*/
+/*website theme font style 
+==================================================================================*/
+.JostFont {
+  font-family: "Jost", sans-serif;
+}
+
+.AleoFont {
+  font-family: "Aleo", serif;
+}
+
+/*website theme font style 
+==================================================================================*/
+/*website Theme font size
+==================================================================================*/
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-32 {
+  font-size: 32;
+}
+
+/*website Theme font size
+==================================================================================*/
+/*page loader animation css
+=================================================================================*/
+#preloader {
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #e7e7e7;
+  z-index: 500;
+  height: 100vh;
+  width: 100%;
+  opacity: 1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#loader {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  display: inline-block;
+}
+
+#loader>div {
+  content: "";
+  background: black;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+#loader>div:nth-of-type(1) {
+  left: 15px;
+}
+
+#loader>div:nth-of-type(3) {
+  left: -15px;
+}
+
+/* dots fade */
+.dots-fade>div {
+  -webkit-animation: dots-fade 1.6s infinite ease;
+  animation: dots-fade 1.6s infinite ease;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.dots-fade>div:nth-of-type(1) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.dots-fade>div:nth-of-type(3) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+@keyframes dots-fade {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0.2;
+  }
+
+  80% {
+    opacity: 1;
+  }
+}
+
+/*page loader animation css
+=================================================================================*/
+/*sidebar 
+=================================================================================*/
+.offcanvas {
+  background: var(--themeRed) !important;
+  width: 100%;
+  z-index: 99999999 !important;
+}
+
+.sidebar ul {
+  text-align: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: #fff !important;
+  letter-spacing: 0.3px;
+  transition: 0.35s;
+  font-size: 30px;
+  padding: 10px 0px;
+  display: inline-block;
+}
+
+.sidebar ul li a:hover {
+  color: #4FB8FF;
+}
+
+.toggle_button {
+  background: rgb(17, 17, 17) !important;
+}
+
+.toggle_button:focus {
+  box-shadow: 0 0 0 white !important;
+  background: var(--themeDark);
+  outline: none;
+}
+
+/*sidebar 
+=================================================================================*/
+/*navbar
+=================================================================================*/
+header {
+  background: url("../media/bg.png");
+}
+
+.navbar {
+  padding: 30px 0px !important;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar_menu {
+  background: var(--themeRed);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 34px;
+  padding: 20px 60px;
+}
+
+.navbar_menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.navbar_menu ul li a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 133%;
+  position: relative;
+}
+
+.navbar_menu ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  right: 0;
+  bottom: -2px;
+  transition: 0.25s;
+}
+
+.navbar_menu ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.toogler_button {
+  display: none !important;
+  background: var(--themeRed);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 34px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+}
+
+.toogler_button i {
+  font-size: 20px;
+}
+
+/*navbar
+=================================================================================*/
+/*hero section css
+===============================================================================*/
+.hero_wrapper {
+  padding: 0px 0px 70px 0px;
+}
+
+.hero_wrapper>.container {
+  position: relative !important;
+}
+
+.hero_text {
+  padding-top: 80px;
+}
+
+.hero_text h1 {
+  font-size: 86px;
+  letter-spacing: 5px;
+  line-height: 91%;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.hero_text h1 span {
+  color: #d31217;
+}
+
+.hero_text p {
+  color: #5c6b73;
+  line-height: 150%;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.hero_image_box {
+  position: absolute;
+  top: 0;
+  right: -110px;
+}
+
+.hero_image_box div {
+  position: relative;
+}
+
+.hero_image_box .note {
+  position: absolute;
+  left: -40px;
+  top: 30%;
+}
+
+.hero_image_box img {
+  max-width: 700px;
+  height: auto;
+}
+
+/*hero section css
+===============================================================================*/
+/*service images section css
+===============================================================================*/
+.service_images {
+  background: #ededeb;
+}
+
+.service_images .first_iamge {
+  position: relative;
+  height: 100%;
+  background: url("../media/Oil-drop.png");
+  background-size: cover;
+  border-radius: 0px 45px 45px 0px;
+}
+
+.grid_1 {
+  min-width: 100% !important;
+}
+
+.grid_image_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.grid_image_1 img {
+  min-width: 100%;
+}
+
+.white_logo_on_image {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 200px;
+  height: auto;
+}
+
+.servie_image_note {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+/*service images section css
+===============================================================================*/
+/*service card section
+===============================================================================*/
+.services {
+  padding: 80px 0px;
+  background: #ededeb;
+}
+
+.service_card {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border-radius: 30px;
+  background: white;
+  transition: 0.35s ease;
+}
+
+.service_card:hover {
+  transform: translateY(-5px);
+  scale: 1.01;
+}
+
+.service_card_body {
+  padding: 20px 20px;
+}
+
+.service_card_body h3 {
+  color: var(--themeRed);
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.service_card_body p {
+  color: #5c6b73;
+  min-height: 135px;
+  margin-bottom: 0;
+}
+
+.service_card_body a {
+  background: var(--themeRed);
+  padding: 5px 25px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 30px auto 0px auto;
+  display: inline-block;
+  transition: 0.35s;
+}
+
+.service_card_body a:hover {
+  background: var(--themeDark);
+}
+
+/*service card section
+===============================================================================*/
+/*It’s too perfect to be just street food
+==============================================================================*/
+.too_perfect {
+  background: var(--themeDark);
+  padding: 30px 0px;
+}
+
+.too_perfect_heading {
+  color: white;
+  text-transform: uppercase;
+  font-size: 65px;
+  letter-spacing: 1px;
+  line-height: 105%;
+}
+
+.too_perfect_heading span {
+  color: var(--themeRed);
+}
+
+/*It’s too perfect to be just street food
+==============================================================================*/
+/*pizza section css
+==============================================================================*/
+.pizza {
+  background: #ededeb;
+  padding: 100px 0px;
+}
+
+.Standard_Pizza_box {
+  border-radius: 32px;
+  background: white;
+  padding: 40px 30px;
+  height: 100%;
+}
+
+.Standard_Pizza_box .pizza_card_title {
+  color: var(--themeRed);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Standard_Pizza_box p {
+  color: var(--themeDark);
+}
+
+.Gourmet_Pizza_box {
+  border-radius: 32px;
+  background: var(--themeDark);
+  padding: 40px 30px;
+  height: 100%;
+}
+
+.Gourmet_Pizza_box .pizza_card_title {
+  color: #feefdc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Gourmet_Pizza_box p {
+  color: white;
+}
+
+/*pizza section css
+==============================================================================*/
+/*contac section css
+==============================================================================*/
+.contact_wrapper {
+  background: url(../media/bg2.png);
+  background-size: cover;
+  padding: 0px 0px 80px 0px;
+}
+
+.contact_heading {
+  color: var(--themeDark);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.3;
+}
+
+.contact_form {
+  padding: 30px 0px 50px 0px;
+}
+
+.contact_form .row {
+  gap: 40px 0px;
+}
+
+.contact_form input {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  height: 55px;
+  border: none;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  color: var(--themeDark);
+  font-family: "Aleo", serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.contact_form input:focus {
+  outline: none;
+}
+
+.contact_form textarea {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  color: var(--themeDark);
+  font-family: "Aleo", serif;
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.contact_form textarea:focus {
+  outline: none;
+}
+
+.contact_form button {
+  background: var(--themeRed);
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 32px;
+  margin-top: 40px;
+  transition: 0.35s;
+}
+
+.contact_form button:hover {
+  color: white;
+  background: var(--themeDark);
+}
+
+.social_box {
+  background: white;
+  border-radius: 32px;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.social_icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social_icons a:hover .social_icon_path {
+  fill: var(--themeRed);
+}
+
+.social_box .social_title {
+  color: var(--themeDark);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.social_box .social_text {
+  color: var(--themeDark);
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+.spotify_card {
+  background: var(--themeDark);
+  border-radius: 32px;
+  padding: 30px 50px;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotify_card .social_title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 120%;
+}
+
+.spotify_card .social_text {
+  color: white;
+}
+
+/*contac section css
+==============================================================================*/
+/*footer css
+==============================================================================*/
+footer {
+  background: var(--themeRed);
+  padding: 50px 0px 20px 0px;
+}
+
+.footer_logo {
+  text-align: right;
+}
+
+.footer_text p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.copy_right {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/*footer css
+==============================================================================*/
+/*Responsive for laptop screens
+==============================================================================*/
+@media screen and (min-width: 1400px) {
+  .hero_image_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  /*navbar
+  =========================*/
+  .logo {
+    width: 180px;
+  }
+
+  .navbar_menu {
+    padding: 20px 40px;
+  }
+
+  .navbar_menu ul {
+    gap: 20px;
+  }
+
+  /*hero section
+  =======================*/
+  .hero_image_box img {
+    max-width: 600px;
+  }
+
+  /*service cards 
+  ======================*/
+  .service_card_body h3 {
+    font-size: 24px;
+  }
+
+  .service_card_body p {
+    min-height: 165px;
+  }
+}
+
+/*Responsive for laptop screens
+==============================================================================*/
+/*Responsive for Tablet screens
+==============================================================================*/
+@media screen and (max-width: 991px) {
+
+  /*font size
+  ========================*/
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 17px;
+  }
+
+  .fs-20 {
+    font-size: 19px;
+  }
+
+  .fs-22 {
+    font-size: 21px;
+  }
+
+  .fs-25 {
+    font-size: 23px;
+  }
+
+  .fs-30 {
+    font-size: 26px;
+  }
+
+  .fs-32 {
+    font-size: 29px;
+  }
+
+  /*navbar
+  ========================*/
+  .logo {
+    width: 120px;
+  }
+
+  .navbar_menu {
+    display: none;
+  }
+
+  .toogler_button {
+    display: block !important;
+  }
+
+  /*hero section
+  =========================*/
+  .hero_text h1 {
+    font-size: 60px;
+  }
+
+  .hero_image_box img {
+    max-width: 450px;
+  }
+
+  /*service cards 
+  ======================*/
+  .services {
+    padding: 40px 0px;
+  }
+
+  .service_card_body h3 {
+    font-size: 26px;
+  }
+
+  .service_card_body p {
+    min-height: 105px;
+  }
+
+  .service_card_row {
+    gap: 20px 0px;
+  }
+
+  .service_card {
+    border-radius: 40px;
+  }
+
+  /*too perfect 
+  =====================*/
+  .too_perfect_heading {
+    font-size: 40px;
+  }
+
+  /*pizza section
+  ======================*/
+  .pizza {
+    padding: 70px 0px;
+  }
+
+  /*contact section
+  =======================*/
+  .contact_form .row {
+    gap: 20px 0px;
+  }
+
+  .spotify_card {
+    margin-top: 20px;
+  }
+
+  .footer_logo {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px !important;
+  }
+}
+
+/*Responsive for Tablet screens
+==============================================================================*/
+/*Responsive for Mobile screens
+==============================================================================*/
+@media screen and (max-width: 767px) {
+
+  /*font size
+  =======================*/
+  .fs-16 {
+    font-size: 15px;
+  }
+
+  .fs-18 {
+    font-size: 17px;
+  }
+
+  .fs-20 {
+    font-size: 18px;
+  }
+
+  .fs-22 {
+    font-size: 20px;
+  }
+
+  .fs-25 {
+    font-size: 20px;
+  }
+
+  .fs-30 {
+    font-size: 22px;
+  }
+
+  .fs-32 {
+    font-size: 24;
+  }
+
+  /*navbar
+  ========================*/
+  .navbar {
+    padding: 10px 0px !important;
+  }
+
+  /*hero section 
+  =========================*/
+  .hero_wrapper {
+    padding-bottom: 20px;
+  }
+
+  .hero_image_box {
+    position: relative;
+    right: -0px !important;
+    padding-top: 20px;
+  }
+
+  .hero_text {
+    padding-top: 20px;
+  }
+
+  .hero_text h1 {
+    font-size: 40px;
+  }
+
+  .hero_text p {
+    margin-top: 16px;
+  }
+
+  .hero_image_box .note {
+    left: 0;
+  }
+
+  /*service image
+  =======================*/
+  .service_images {}
+
+  .first_iamge {
+    height: 400px !important;
+    border-radius: 32px !important;
+    margin-bottom: 10px;
+  }
+
+  .white_logo_on_image {
+    max-width: 150px;
+  }
+
+  .servie_image_note {
+    width: 120px;
+    height: 120px;
+    left: 30px;
+  }
+
+  /*service cards 
+  ======================*/
+  .services {
+    padding: 30px 0px;
+  }
+
+  .service_card_body h3 {
+    font-size: 22px;
+  }
+
+  .service_card_body p {
+    min-height: auto;
+  }
+
+  .service_card {
+    border-radius: 60px 60px 30px 30px;
+  }
+
+  /*too perfect 
+  =====================*/
+  .too_perfect_logo {
+    width: 150px;
+  }
+
+  .too_perfect_heading {
+    font-size: 30px;
+    padding-bottom: 10px !important;
+  }
+
+  /*pizza section
+  ======================*/
+  .pizza {
+    padding: 40px 0px;
+  }
+
+  /*contact section
+  =====================*/
+  .contact_wrapper {
+    padding-bottom: 40px;
+  }
+
+  .Standard_Pizza_box {
+    height: auto;
+  }
+
+  .Gourmet_Pizza_box {
+    margin-top: 30px !important;
+    height: auto !important;
+    box-sizing: border-box;
+  }
+
+  .contact_form {
+    padding: 20px 0px 40px 0px;
+  }
+
+  .contact_form button {
+    margin-top: 20px;
+  }
+
+  .social_icons {
+    flex-direction: row;
+  }
+
+  .social_box {
+    padding: 30px 30px;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .spotify_card {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  /*footer
+  =====================*/
+  .footer_logo_image {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .footer_logo_image img {
+    width: 150px;
+    height: auto;
+  }
+
+  .footer_logo {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    margin-top: 20px !important;
+  }
+
+  .copy_right {
+    text-align: center;
+  }
+}
+
+/*Responsive for Mobile screens
+==============================================================================*/
