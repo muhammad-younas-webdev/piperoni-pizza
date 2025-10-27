@@ -312,7 +312,7 @@ header {
 .hero_image_box {
   position: absolute;
   top: 0;
-  right: -110px;
+  right: -160px;
 }
 
 .hero_image_box div {
@@ -326,7 +326,7 @@ header {
 }
 
 .hero_image_box img {
-  max-width: 700px;
+  max-width: 750px;
   height: auto;
 }
 
@@ -673,6 +673,10 @@ footer {
     gap: 20px;
   }
 
+  .hero_image_box{
+    right: -120px;
+  }
+
   /*hero section
   =======================*/
   .hero_image_box img {
@@ -746,8 +750,18 @@ footer {
     font-size: 60px;
   }
 
+  .hero_image_box{
+    right: -80px;
+  }
+
   .hero_image_box img {
-    max-width: 450px;
+    max-width: 460px;
+  }
+
+  .hero_image_box .note {
+    left: -30px;
+    width: 130px;
+    top: 30%;
   }
 
   /*service cards 
@@ -869,7 +883,12 @@ footer {
   }
 
   .hero_image_box .note {
-    left: 0;
+    left: -5px;
+    width: 100px;
+    top: 15%;
+  }
+  .hero_image_box img{
+    max-width: 100%;
   }
 
   /*service image

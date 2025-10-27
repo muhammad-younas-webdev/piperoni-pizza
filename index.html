@@ -78,27 +78,27 @@
             <div class="navbar_menu">
               <ul>
                 <li>
-                  <a href="" class="JostFont fw-bold fs-16 text-white">
+                  <a href="#service" class="JostFont fw-bold fs-16 text-white">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="" class="JostFont fw-bold fs-16 text-white">
+                  <a href="#OurPizza" class="JostFont fw-bold fs-16 text-white">
                     Our Pizza
                   </a>
                 </li>
                 <li>
-                  <a href="" class="JostFont fw-bold fs-16 text-white">
+                  <a href="#OurMenu" class="JostFont fw-bold fs-16 text-white">
                     Our Menu
                   </a>
                 </li>
                 <li>
-                  <a href="" class="JostFont fw-bold fs-16 text-white">
+                  <a href="#Bookings" class="JostFont fw-bold fs-16 text-white">
                     Bookings
                   </a>
                 </li>
                 <li>
-                  <a href="" class="JostFont fw-bold fs-16 text-white">
+                  <a href="#Contact" class="JostFont fw-bold fs-16 text-white">
                     Contact
                   </a>
                 </li>
@@ -138,6 +138,7 @@
                 width="815"
                 height="662"
                 alt="hero image" />
+                <img src="media/hero_note.png" width="160" height="160" alt="note" class="note">
             </div>
           </div>
         </div>
@@ -145,7 +146,7 @@
     </header>
 
     <!-- service Images
-	================================================================= -->
+	   ================================================================= -->
     <section class="service_images">
       <div class="row gx-2">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -176,7 +177,7 @@
 
     <!-- service card
 	================================================================ -->
-    <section class="services">
+    <section class="services" id="service">
       <div class="container">
         <div class="row service_card_row">
           <div class="col-lg-3 col-md-6 col-sm-12">
@@ -265,7 +266,7 @@
 
     <!-- watercress image banner
 	================================================================ -->
-    <div>
+    <div id="OurPizza">
       <img
         src="media/watercress.png"
         width="1444"
@@ -297,7 +298,7 @@
 
     <!-- pizza section
 	================================================================= -->
-    <section class="pizza">
+    <section class="pizza" id="OurMenu">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10 col-md-12 col-sm-12">
@@ -381,11 +382,11 @@
 
     <!-- contact section
 	================================================================= -->
-    <section class="contact_wrapper">
+    <section class="contact_wrapper" id="Bookings">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9 col-md-12">
-            <div class="contact_heading">
+            <div class="contact_heading" >
               <p class="JostFont fw-bold fs-25 text-center">
                 Thanks for visiting our website, if you’re interested in making
                 a booking or finding out some more information simply fill out
@@ -421,7 +422,7 @@
             </form>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="Contact">
           <div class="col-lg-11 col-md-12">
             <div class="row justify-content-center">
               <div class="col-lg-6 col-md-8 col-sm-12">
@@ -602,19 +603,19 @@
       <div class="offcanvas-body">
         <ul class="justify-content-end flex-grow-1 pe-3">
           <li>
-            <a href="" class="JostFont fw-bold fs-16 text-white"> Services </a>
+            <a href="#service" data-bs-dismiss="offcanvas" class="nav-link JostFont fw-bold fs-16 text-white"> Services </a>
           </li>
           <li>
-            <a href="" class="JostFont fw-bold fs-16 text-white"> Our Pizza </a>
+            <a href="#OurPizza" data-bs-dismiss="offcanvas" class="nav-link JostFont fw-bold fs-16 text-white"> Our Pizza </a>
           </li>
           <li>
-            <a href="" class="JostFont fw-bold fs-16 text-white"> Our Menu </a>
+            <a href="#OurMenu" data-bs-dismiss="offcanvas" class="nav-link JostFont fw-bold fs-16 text-white"> Our Menu </a>
           </li>
           <li>
-            <a href="" class="JostFont fw-bold fs-16 text-white"> Bookings </a>
+            <a href="#Bookings" data-bs-dismiss="offcanvas" class="nav-link JostFont fw-bold fs-16 text-white"> Bookings </a>
           </li>
           <li>
-            <a href="" class="JostFont fw-bold fs-16 text-white"> Contact </a>
+            <a href="#Contact" data-bs-dismiss="offcanvas" class="nav-link JostFont fw-bold fs-16 text-white"> Contact </a>
           </li>
         </ul>
       </div>
@@ -680,7 +681,7 @@
           setTimeout(() => {
             if (target) {
               window.scrollTo({
-                top: target.offsetTop - 70, // Adjust for navbar height
+                top: target.offsetTop - 0, // Adjust for navbar height
                 behavior: "smooth",
               });
             }
