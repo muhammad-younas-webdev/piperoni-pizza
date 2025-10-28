@@ -211,7 +211,7 @@ header {
 }
 
 .logo {
-  width: 250px;
+  width: 290px;
   height: auto;
 }
 
@@ -234,7 +234,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 30px;
+  gap: 45px;
 }
 
 .navbar_menu ul li a {
@@ -242,6 +242,7 @@ header {
   text-transform: uppercase;
   line-height: 133%;
   position: relative;
+  font-size: 14px;
 }
 
 .navbar_menu ul li a::before {
@@ -326,7 +327,7 @@ header {
 }
 
 .hero_image_box img {
-  max-width: 750px;
+  max-width: 800px;
   height: auto;
 }
 
@@ -396,7 +397,7 @@ header {
 }
 
 .service_card_body {
-  padding: 20px 20px;
+  padding: 36px 24px;
 }
 
 .service_card_body h3 {
@@ -408,16 +409,16 @@ header {
 
 .service_card_body p {
   color: #5c6b73;
-  min-height: 135px;
+  min-height: 120px;
   margin-bottom: 0;
 }
 
 .service_card_body a {
   background: var(--themeRed);
-  padding: 5px 25px;
+  padding: 5px 35px;
   border-radius: 30px;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 3px;
   text-transform: uppercase;
   margin: 30px auto 0px auto;
@@ -439,15 +440,19 @@ header {
 }
 
 .too_perfect_heading {
-  color: white;
+  color: #feefdc;
   text-transform: uppercase;
-  font-size: 65px;
-  letter-spacing: 1px;
+  font-size: 60px;
+  letter-spacing: 4px;
   line-height: 105%;
 }
 
 .too_perfect_heading span {
   color: var(--themeRed);
+}
+.too_perfect_logo{
+  width: 310px;
+  height: auto;
 }
 
 /*It’s too perfect to be just street food
@@ -474,6 +479,7 @@ header {
 
 .Standard_Pizza_box p {
   color: var(--themeDark);
+  margin-bottom: 10px;
 }
 
 .Gourmet_Pizza_box {
@@ -491,6 +497,7 @@ header {
 
 .Gourmet_Pizza_box p {
   color: white;
+  margin-bottom: 10px;
 }
 
 /*pizza section css
@@ -506,7 +513,7 @@ header {
 .contact_heading {
   color: var(--themeDark);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing:4px;
   line-height: 1.3;
 }
 
@@ -555,11 +562,13 @@ header {
 .contact_form button {
   background: var(--themeRed);
   color: white;
-  padding: 5px 20px;
+  padding: 5px 25px;
   border: none;
   border-radius: 32px;
   margin-top: 40px;
   transition: 0.35s;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .contact_form button:hover {
@@ -592,6 +601,7 @@ header {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-family: "Jost", sans-serif;
 }
 
 .social_box .social_text {
@@ -616,6 +626,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 120%;
+  font-family: "Jost", sans-serif;
 }
 
 .spotify_card .social_text {
@@ -636,13 +647,16 @@ footer {
 }
 
 .footer_text p {
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
+  color: #feefdc;
+  font-size: 19px;
+  line-height: 1.8;
 }
 
 .copy_right {
-  margin-top: 30px;
-  font-size: 14px;
+  margin-top: 40px;
+  font-size: 12px;
 }
 
 /*footer css
@@ -654,6 +668,9 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  .hero_image_box{
+    right: -100px;
   }
 }
 
